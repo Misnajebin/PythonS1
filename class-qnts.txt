@@ -1,0 +1,6 @@
+
+        #create a abank account with memebers account number ,name,type of account and balance write constructor and methods to deposit at the bank and withdraw an amounty from the bank?
+        #create rectangle class with attributes lenght and breadth and methods to find area and perimeter compare two rectangle by there area?
+        #Craete a class rectangle with private attributes length and breadth ,overload < operator to compare the area of two rectangles ?
+        #Create a class Time with private attribute hour minute and second overload + operatpor to find sum of two times?
+        #create a class publisher (Name ) derive classBook from publisher with attributes title and author ,derive class Python from book  with attributes price and no of pages write a pgm that display information about the python book wuth base class constructor and method overriding?
