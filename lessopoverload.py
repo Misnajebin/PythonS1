@@ -13,15 +13,16 @@ class Rectangle:
             return False
         
         
-l1= int(input("enter the lenghth of the first rectangle:"))
-l2=int(input("enter the lenghth of the second rectangle:"))
-b1=int(input("enter the breadth of the first rectangle:"))
-b2=int(input("enter the breadth of the second rectangle:"))
+l1,b1= map(int,input("enter the lenghth and breadth of the first rectangle:").split())
+l2,b2= map(int,input("enter the lenghth and breadth of the Second rectangle:").split())
+
 r1=Rectangle(l1,b1)
 r2=Rectangle(l2,b2)
 r1.findArea()
 r2.findArea()
 if r1<r2:
     print("The Second  Rectangle is Larger ")
-else:
+elif r2<r1:
     print("The First Rectangle is Larger")
+else:
+        print("Two Rectangles are Same")
