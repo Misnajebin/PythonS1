@@ -21,8 +21,9 @@ r2=Rectangle(l2,b2)
 r1.findArea()
 r2.findArea()
 if r1<r2:
-    print("The Second  Rectangle is Larger ")
+    print("The Second  Rectangle is Larger")
 elif r2<r1:
     print("The First Rectangle is Larger")
 else:
-        print("Two Rectangles are Same")
+    print("Two Rectangles are Same")
+    

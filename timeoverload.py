@@ -3,10 +3,16 @@ class Time:
         self.__hour=hour
         self.__minute=minute
         self.__second=second
+    def gethour(self):
+        return self.__hour
+    def getminute(self):
+        return self.__minute
+    def getsecond(self):
+        return self.__second
     def __add__(self,other):      
-        h=self.__hour+other.__hour
-        m=self.__minute+other.__minute
-        s=self.__second+other.__second
+        h=self.gethour()+other.gethour()
+        m=self.getminute()+other.getminute()
+        s=self.getsecond()+other.getsecond()
         if s>60:
            s-=60
            m+=1
@@ -18,9 +24,9 @@ class Time:
         t3=Time(h,m,s)
         return t3
     def display(self):
-        print ("hour=",self.h)
-        print("minute=",self.m)
-        print("seconds=",self.s)
+        print ("hour=",self.__hour)
+        print("minute=",self.__minute)
+        print("seconds=",self.__second)
         
 h1,m1,s1=map(int,input("enter your time in hour,minute,second format:").split())
 h2,m2,s2=map(int,input("enter your time in hour,minute,second format:").split())
